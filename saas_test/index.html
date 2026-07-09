@@ -1,0 +1,995 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus — AI-Powered CRM &amp; Project Management Platform</title>
+  <meta name="description" content="Nexus is an AI-powered SaaS platform combining CRM, project management, and team collaboration. Boost productivity by 300% with intelligent automation.">
+  <meta name="keywords" content="AI SaaS, CRM, project management, team collaboration, automation, productivity, artificial intelligence">
+  <meta name="author" content="Nexus Inc.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nexus.app">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nexus.app">
+  <meta property="og:title" content="Nexus — AI-Powered CRM &amp; Project Management Platform">
+  <meta property="og:description" content="Transform your workflow with AI-powered automation. The all-in-one platform for modern teams.">
+  <meta property="og:image" content="https://nexus.app/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Nexus">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@nexusapp">
+  <meta name="twitter:creator" content="@nexusapp">
+  <meta name="twitter:title" content="Nexus — AI-Powered CRM &amp; Project Management Platform">
+  <meta name="twitter:description" content="Transform your workflow with AI-powered automation. The all-in-one platform for modern teams.">
+  <meta name="twitter:image" content="https://nexus.app/assets/og-image.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta name="theme-color" content="#6366f1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Nexus",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "29",
+      "priceCurrency": "USD"
+    },
+    "description": "AI-powered CRM and project management platform for modern teams",
+    "url": "https://nexus.app",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "2400"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "Nexus Inc.",
+      "url": "https://nexus.app"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display:none">
+  <defs>
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <polyline points="20 6 9 17 4 12"/>
+    </symbol>
+    <symbol id="icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <line x1="18" y1="6" x2="6" y2="18"/>
+      <line x1="6" y1="6" x2="18" y2="18"/>
+    </symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <polyline points="6 9 12 15 18 9"/>
+    </symbol>
+    <symbol id="icon-chevron-left" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <polyline points="15 18 9 12 15 6"/>
+    </symbol>
+    <symbol id="icon-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <polyline points="9 18 15 12 9 6"/>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <line x1="5" y1="12" x2="19" y2="12"/>
+      <polyline points="12 5 19 12 12 19"/>
+    </symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <circle cx="12" cy="12" r="10"/>
+      <polygon points="10 8 16 12 10 16 10 8"/>
+    </symbol>
+    <symbol id="icon-trend-up" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+      <polyline points="17 6 23 6 23 12"/>
+    </symbol>
+  </defs>
+</svg>
+
+  <div id="loader" class="loader" role="status" aria-label="Loading page">
+    <div class="loader__inner">
+      <div class="loader__logo">
+        <svg width="52" height="52" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path d="M24 4L44 16V32L24 44L4 32V16L24 4Z" fill="url(#loaderGrad)"/>
+          <defs>
+            <linearGradient id="loaderGrad" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#6366f1"/>
+              <stop offset="100%" stop-color="#8b5cf6"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="loader__bar" aria-hidden="true">
+        <div class="loader__progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" id="header" role="banner">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#" class="logo-link" aria-label="Nexus — Go to homepage">
+        <svg class="logo-icon" width="32" height="32" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path d="M24 4L44 16V32L24 44L4 32V16L24 4Z" fill="url(#navGrad)"/>
+          <defs>
+            <linearGradient id="navGrad" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#6366f1"/>
+              <stop offset="100%" stop-color="#8b5cf6"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-name">Nexus</span>
+      </a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#features" class="nav__link">Features</a></li>
+        <li><a href="#benefits" class="nav__link">Benefits</a></li>
+        <li><a href="#pricing" class="nav__link">Pricing</a></li>
+        <li><a href="#testimonials" class="nav__link">Reviews</a></li>
+        <li><a href="#faq" class="nav__link">FAQ</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" type="button">
+          <svg class="theme-toggle__sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="theme-toggle__moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <a href="#" class="btn btn--ghost btn--sm">Sign In</a>
+        <a href="#contact" class="btn btn--primary btn--sm">Get Started</a>
+      </div>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="navMenu" type="button">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__gradient"></div>
+        <div class="hero__grid"></div>
+        <div class="hero__orbs">
+          <div class="hero__orb hero__orb--1"></div>
+          <div class="hero__orb hero__orb--2"></div>
+          <div class="hero__orb hero__orb--3"></div>
+        </div>
+      </div>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <div class="hero__badge reveal-up">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            <span>Trusted by 10,000+ Teams Worldwide</span>
+          </div>
+          <h1 class="hero__title reveal-up" id="hero-heading">
+            The AI Platform That<br>
+            <span class="hero__title-gradient">Runs Your Business</span>
+          </h1>
+          <p class="hero__subtitle reveal-up">
+            Nexus combines AI-powered CRM, intelligent project management, and team collaboration in one seamless platform. Automate repetitive tasks and focus on what matters.
+          </p>
+          <div class="hero__cta reveal-up">
+            <a href="#contact" class="btn btn--primary btn--lg">
+              Start Free Trial
+              <svg width="18" height="18" stroke-width="2.5" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+            </a>
+            <a href="#features" class="btn btn--ghost btn--lg">
+              <svg width="18" height="18" stroke-width="2.5" aria-hidden="true"><use href="#icon-play"/></svg>
+              See Features
+            </a>
+          </div>
+          <div class="hero__trust reveal-up">
+            <div class="hero__trust-avatars" aria-hidden="true">
+              <div class="hero__avatar"></div>
+              <div class="hero__avatar"></div>
+              <div class="hero__avatar"></div>
+              <div class="hero__avatar"></div>
+              <div class="hero__avatar"></div>
+            </div>
+            <div class="hero__trust-text">
+              <div class="hero__stars" aria-label="Rated 4.9 out of 5 stars">★★★★★</div>
+              <span>4.9/5 from 2,400+ reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal-right" aria-hidden="true">
+          <div class="hero__dashboard">
+            <div class="hero__dashboard-header">
+              <div class="hero__dashboard-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="hero__dashboard-title">Nexus Dashboard</span>
+            </div>
+            <div class="hero__dashboard-body">
+              <div class="hero__dashboard-sidebar">
+                <div class="hero__nav-item hero__nav-item--active">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                </div>
+                <div class="hero__nav-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="hero__nav-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <div class="hero__nav-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+              </div>
+              <div class="hero__dashboard-main">
+                <div class="hero__stat-cards">
+                  <div class="hero__stat-card">
+                    <span class="hero__stat-label">Revenue</span>
+                    <span class="hero__stat-value">$124k</span>
+                    <span class="hero__stat-change hero__stat-change--up">+24%</span>
+                  </div>
+                  <div class="hero__stat-card">
+                    <span class="hero__stat-label">Users</span>
+                    <span class="hero__stat-value">8,420</span>
+                    <span class="hero__stat-change hero__stat-change--up">+18%</span>
+                  </div>
+                  <div class="hero__stat-card">
+                    <span class="hero__stat-label">Tasks</span>
+                    <span class="hero__stat-value">1,294</span>
+                    <span class="hero__stat-change hero__stat-change--up">+7%</span>
+                  </div>
+                </div>
+                <div class="hero__chart">
+                  <div class="hero__chart-bars">
+                    <div class="hero__bar"></div>
+                    <div class="hero__bar"></div>
+                    <div class="hero__bar"></div>
+                    <div class="hero__bar"></div>
+                    <div class="hero__bar"></div>
+                    <div class="hero__bar hero__bar--active"></div>
+                    <div class="hero__bar"></div>
+                  </div>
+                </div>
+                <div class="hero__tasks">
+                  <div class="hero__task hero__task--done">
+                    <span class="hero__task-check">✓</span>
+                    <span>Q4 Sales Strategy</span>
+                  </div>
+                  <div class="hero__task hero__task--progress">
+                    <span class="hero__task-check">◐</span>
+                    <span>Product Launch</span>
+                  </div>
+                  <div class="hero__task">
+                    <span class="hero__task-check">○</span>
+                    <span>Client Onboarding</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__floating-cards">
+            <div class="hero__float-card hero__float-card--1">
+              <svg width="18" height="18" stroke-width="2.5" aria-hidden="true"><use href="#icon-check"/></svg>
+              <span>AI Automation Active</span>
+            </div>
+            <div class="hero__float-card hero__float-card--2">
+              <svg width="18" height="18" stroke-width="2.5" aria-hidden="true"><use href="#icon-trend-up"/></svg>
+              <span>+300% Productivity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <div class="hero__scroll-mouse">
+          <div class="hero__scroll-wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logos" aria-label="Trusted by leading companies">
+      <div class="container">
+        <p class="logos__label">Trusted by industry leaders</p>
+        <div class="logos__track" aria-hidden="true">
+          <div class="logos__list">
+            <div class="logos__item">Salesforce</div>
+            <div class="logos__item">Microsoft</div>
+            <div class="logos__item">Shopify</div>
+            <div class="logos__item">Stripe</div>
+            <div class="logos__item">Notion</div>
+            <div class="logos__item">Atlassian</div>
+            <div class="logos__item">HubSpot</div>
+            <div class="logos__item">Zendesk</div>
+            <div class="logos__item">Salesforce</div>
+            <div class="logos__item">Microsoft</div>
+            <div class="logos__item">Shopify</div>
+            <div class="logos__item">Stripe</div>
+            <div class="logos__item">Notion</div>
+            <div class="logos__item">Atlassian</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <header class="section-header reveal-up">
+          <span class="section-badge">Features</span>
+          <h2 class="section-title" id="features-heading">Everything your team needs<br>to grow your business</h2>
+          <p class="section-subtitle">Nexus brings together powerful tools in one unified platform. Say goodbye to juggling multiple apps.</p>
+        </header>
+        <div class="features__grid">
+          <article class="feature-card reveal-up">
+            <div class="feature-card__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M22 12A10 10 0 0 0 12 2v10h10z"/></svg>
+            </div>
+            <h3 class="feature-card__title">AI-Powered CRM</h3>
+            <p class="feature-card__desc">Intelligent customer relationship management that predicts churn, suggests next actions, and automates follow-ups using machine learning.</p>
+            <ul class="feature-card__list" role="list">
+              <li>Predictive lead scoring</li>
+              <li>Automated email sequences</li>
+              <li>Pipeline intelligence</li>
+            </ul>
+          </article>
+          <article class="feature-card feature-card--featured reveal-up">
+            <div class="feature-card__badge">Most Popular</div>
+            <div class="feature-card__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            </div>
+            <h3 class="feature-card__title">Smart Project Management</h3>
+            <p class="feature-card__desc">Kanban boards, Gantt charts, and sprint planning powered by AI that automatically assigns tasks based on team availability and skill sets.</p>
+            <ul class="feature-card__list" role="list">
+              <li>AI task assignment</li>
+              <li>Resource optimization</li>
+              <li>Real-time collaboration</li>
+            </ul>
+          </article>
+          <article class="feature-card reveal-up">
+            <div class="feature-card__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="feature-card__title">Advanced Analytics</h3>
+            <p class="feature-card__desc">Real-time dashboards with predictive analytics, custom KPI tracking, and AI-generated insights that help you make data-driven decisions.</p>
+            <ul class="feature-card__list" role="list">
+              <li>Custom dashboards</li>
+              <li>Predictive forecasting</li>
+              <li>Exportable reports</li>
+            </ul>
+          </article>
+          <article class="feature-card reveal-up">
+            <div class="feature-card__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="feature-card__title">Team Collaboration</h3>
+            <p class="feature-card__desc">Real-time messaging, video calls, shared workspaces, and document collaboration — all integrated directly into your workflow.</p>
+            <ul class="feature-card__list" role="list">
+              <li>Real-time messaging</li>
+              <li>Video conferencing</li>
+              <li>Document co-editing</li>
+            </ul>
+          </article>
+          <article class="feature-card reveal-up">
+            <div class="feature-card__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 8.46a5 5 0 0 0 0 7.07"/></svg>
+            </div>
+            <h3 class="feature-card__title">Automation Engine</h3>
+            <p class="feature-card__desc">Build powerful no-code automation workflows with 200+ integrations. Trigger actions across all your tools automatically.</p>
+            <ul class="feature-card__list" role="list">
+              <li>No-code workflow builder</li>
+              <li>200+ integrations</li>
+              <li>Custom webhooks</li>
+            </ul>
+          </article>
+          <article class="feature-card reveal-up">
+            <div class="feature-card__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="feature-card__title">Enterprise Security</h3>
+            <p class="feature-card__desc">SOC 2 Type II certified, end-to-end encryption, SSO, MFA, and granular role-based access control for enterprise-grade security.</p>
+            <ul class="feature-card__list" role="list">
+              <li>SOC 2 Type II certified</li>
+              <li>End-to-end encryption</li>
+              <li>GDPR compliant</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" id="benefits" aria-labelledby="benefits-heading">
+      <div class="container">
+        <div class="benefits__layout">
+          <div class="benefits__content">
+            <header class="section-header section-header--left reveal-up">
+              <span class="section-badge">Why Nexus</span>
+              <h2 class="section-title" id="benefits-heading">Built for teams that want to move faster</h2>
+              <p class="section-subtitle">Traditional tools slow you down. Nexus learns from your team's patterns and gets smarter every day.</p>
+            </header>
+            <div class="benefits__list reveal-up">
+              <div class="benefit-item">
+                <div class="benefit-item__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </div>
+                <div>
+                  <h3 class="benefit-item__title">10x Faster Onboarding</h3>
+                  <p class="benefit-item__desc">Get your entire team up and running in under 30 minutes with guided setup and AI-powered configuration assistance.</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-item__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <h3 class="benefit-item__title">Save 20+ Hours Per Week</h3>
+                  <p class="benefit-item__desc">Automation handles repetitive tasks so your team can focus on high-impact work that drives real business growth.</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-item__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <div>
+                  <h3 class="benefit-item__title">3x Revenue Growth</h3>
+                  <p class="benefit-item__desc">Teams using Nexus see an average 300% increase in revenue within the first 6 months through better CRM and pipeline management.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="benefits__visual reveal-left">
+            <div class="benefits__mockup">
+              <div class="benefits__mockup-card benefits__mockup-card--main">
+                <div class="benefits__mockup-header">
+                  <span>AI Performance Insights</span>
+                  <span class="benefits__mockup-live">
+                    <span class="benefits__live-dot" aria-hidden="true"></span>
+                    Live
+                  </span>
+                </div>
+                <div class="benefits__mockup-content">
+                  <div class="benefits__progress-item">
+                    <span>Lead Conversion</span>
+                    <div class="benefits__progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Lead Conversion 78%">
+                      <div class="benefits__progress-fill benefits__progress-fill--1"></div>
+                    </div>
+                    <span>78%</span>
+                  </div>
+                  <div class="benefits__progress-item">
+                    <span>Team Efficiency</span>
+                    <div class="benefits__progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Team Efficiency 92%">
+                      <div class="benefits__progress-fill benefits__progress-fill--2"></div>
+                    </div>
+                    <span>92%</span>
+                  </div>
+                  <div class="benefits__progress-item">
+                    <span>Client Satisfaction</span>
+                    <div class="benefits__progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100" aria-label="Client Satisfaction 96%">
+                      <div class="benefits__progress-fill benefits__progress-fill--3"></div>
+                    </div>
+                    <span>96%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="benefits__mockup-card benefits__mockup-card--float">
+                <svg width="30" height="30" stroke-width="2" aria-hidden="true"><use href="#icon-trend-up"/></svg>
+                <div>
+                  <div class="benefits__mockup-stat">+247%</div>
+                  <div class="benefits__mockup-stat-label">Revenue Growth</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-labelledby="stats-heading">
+      <div class="container">
+        <h2 class="visually-hidden" id="stats-heading">Platform Statistics</h2>
+        <div class="stats__grid">
+          <div class="stats__item reveal-up">
+            <span class="stats__number" data-count="10000" data-suffix="+">0</span>
+            <span class="stats__label">Active Teams</span>
+          </div>
+          <div class="stats__item reveal-up">
+            <span class="stats__number" data-count="300" data-suffix="%">0</span>
+            <span class="stats__label">Avg. Productivity Boost</span>
+          </div>
+          <div class="stats__item reveal-up">
+            <span class="stats__number" data-count="98" data-suffix="%">0</span>
+            <span class="stats__label">Customer Satisfaction</span>
+          </div>
+          <div class="stats__item reveal-up">
+            <span class="stats__number" data-count="20" data-suffix="hrs">0</span>
+            <span class="stats__label">Saved Per Week</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <header class="section-header reveal-up">
+          <span class="section-badge">Testimonials</span>
+          <h2 class="section-title" id="testimonials-heading">Loved by teams worldwide</h2>
+          <p class="section-subtitle">Don't just take our word for it. Here's what our customers have to say about Nexus.</p>
+        </header>
+        <div class="testimonials__slider" role="region" aria-label="Customer testimonials">
+          <div class="testimonials__track" id="testimonialsTrack">
+            <article class="testimonial-card">
+              <div class="testimonial-card__rating" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "Nexus completely transformed how our sales team operates. The AI-powered CRM doubled our conversion rate in just 3 months. I can't imagine going back to our old tools."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">SJ</div>
+                <div>
+                  <div class="testimonial-card__name">Sarah Johnson</div>
+                  <div class="testimonial-card__role">VP of Sales, TechCorp</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-card__rating" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "As a project manager, I've tried every PM tool out there. Nexus is on another level. The AI task assignment alone saves me 2 hours every single day. Worth every penny."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">MC</div>
+                <div>
+                  <div class="testimonial-card__name">Marcus Chen</div>
+                  <div class="testimonial-card__role">Senior PM, InnovateCo</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-card__rating" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "The automation capabilities are mind-blowing. We eliminated 40% of our manual processes in week one. Our team is finally focused on creative work instead of repetitive tasks."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">PS</div>
+                <div>
+                  <div class="testimonial-card__name">Priya Sharma</div>
+                  <div class="testimonial-card__role">CEO, StartupAI</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-card__rating" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "Enterprise security, beautiful UI, and incredible AI features — Nexus is the complete package. Our 500-person team onboarded seamlessly in under a day."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">JR</div>
+                <div>
+                  <div class="testimonial-card__name">James Rivera</div>
+                  <div class="testimonial-card__role">CTO, Enterprise Solutions</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-card__rating" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "The analytics dashboard gives us insights we never had before. We can now predict customer churn before it happens and proactively reach out. Game-changing product."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">EW</div>
+                <div>
+                  <div class="testimonial-card__name">Emma Williams</div>
+                  <div class="testimonial-card__role">Head of Growth, ScaleUp</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="testimonials__controls">
+          <button class="testimonials__btn" id="prevBtn" aria-label="Previous testimonials" type="button">
+            <svg width="20" height="20" stroke-width="2.5" aria-hidden="true"><use href="#icon-chevron-left"/></svg>
+          </button>
+          <div class="testimonials__dots" id="testimonialDots" role="tablist" aria-label="Testimonial slides"></div>
+          <button class="testimonials__btn" id="nextBtn" aria-label="Next testimonials" type="button">
+            <svg width="20" height="20" stroke-width="2.5" aria-hidden="true"><use href="#icon-chevron-right"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <header class="section-header reveal-up">
+          <span class="section-badge">Pricing</span>
+          <h2 class="section-title" id="pricing-heading">Simple, transparent pricing</h2>
+          <p class="section-subtitle">Choose the plan that works for your team. All plans include a 14-day free trial. No credit card required.</p>
+        </header>
+        <div class="pricing__toggle reveal-up" role="group" aria-label="Billing period selection">
+          <span class="pricing__toggle-label">Monthly</span>
+          <button class="pricing__switch" id="pricingSwitch" aria-label="Toggle annual billing for 20% discount" aria-pressed="false" type="button">
+            <span class="pricing__switch-thumb" aria-hidden="true"></span>
+          </button>
+          <span class="pricing__toggle-label">
+            Annual
+            <span class="pricing__save-badge">Save 20%</span>
+          </span>
+        </div>
+        <div class="pricing__grid">
+          <article class="pricing-card reveal-up" aria-label="Starter plan — $29 per month">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Starter</h3>
+              <p class="pricing-card__desc">Perfect for small teams getting started</p>
+              <div class="pricing-card__price">
+                <span class="pricing-card__currency">$</span>
+                <span class="pricing-card__amount" data-monthly="29" data-annual="23">29</span>
+                <span class="pricing-card__period">/mo</span>
+              </div>
+            </div>
+            <ul class="pricing-card__features" role="list">
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                Up to 5 team members
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                CRM with 1,000 contacts
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                Basic project management
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                5GB storage
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                Email support
+              </li>
+              <li class="pricing-card__feature pricing-card__feature--off">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-cross"/></svg>
+                AI features
+              </li>
+              <li class="pricing-card__feature pricing-card__feature--off">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-cross"/></svg>
+                Advanced analytics
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn--outline btn--full">Start Free Trial</a>
+          </article>
+
+          <article class="pricing-card pricing-card--featured reveal-up" aria-label="Professional plan — $79 per month, most popular">
+            <div class="pricing-card__popular" aria-label="Most popular plan">Most Popular</div>
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Professional</h3>
+              <p class="pricing-card__desc">For growing teams that need more power</p>
+              <div class="pricing-card__price">
+                <span class="pricing-card__currency">$</span>
+                <span class="pricing-card__amount" data-monthly="79" data-annual="63">79</span>
+                <span class="pricing-card__period">/mo</span>
+              </div>
+            </div>
+            <ul class="pricing-card__features" role="list">
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                Up to 25 team members
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                Unlimited CRM contacts
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                Full project management suite
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                50GB storage
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                Priority support (24h response)
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                Full AI feature suite
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                Advanced analytics &amp; reporting
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--full">Start Free Trial</a>
+          </article>
+
+          <article class="pricing-card reveal-up" aria-label="Enterprise plan — $199 per month">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Enterprise</h3>
+              <p class="pricing-card__desc">For large organizations with custom needs</p>
+              <div class="pricing-card__price">
+                <span class="pricing-card__currency">$</span>
+                <span class="pricing-card__amount" data-monthly="199" data-annual="159">199</span>
+                <span class="pricing-card__period">/mo</span>
+              </div>
+            </div>
+            <ul class="pricing-card__features" role="list">
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                Unlimited team members
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                Unlimited everything
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                Custom integrations &amp; API
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                Unlimited storage
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                24/7 dedicated support
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                Enterprise AI suite
+              </li>
+              <li class="pricing-card__feature">
+                <svg width="15" height="15" stroke-width="3" aria-hidden="true"><use href="#icon-check"/></svg>
+                SSO, MFA &amp; advanced security
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn--outline btn--full">Contact Sales</a>
+          </article>
+        </div>
+        <p class="pricing__note reveal-up">All plans include a 14-day free trial. No credit card required. Cancel anytime.</p>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <header class="section-header reveal-up">
+          <span class="section-badge">FAQ</span>
+          <h2 class="section-title" id="faq-heading">Frequently asked questions</h2>
+          <p class="section-subtitle">Can't find the answer you're looking for? Reach out to our support team.</p>
+        </header>
+        <div class="faq__list reveal-up">
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false" type="button">
+              <span>How does the 14-day free trial work?</span>
+              <svg class="faq-item__icon" width="20" height="20" stroke-width="2" aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Start your free trial instantly — no credit card required. You'll get full access to all Professional plan features for 14 days. At the end of your trial, choose the plan that fits your team or your account automatically moves to our free tier with no charges.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false" type="button">
+              <span>Can I switch plans at any time?</span>
+              <svg class="faq-item__icon" width="20" height="20" stroke-width="2" aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Yes! You can upgrade or downgrade your plan at any time from your account settings. Upgrades take effect immediately, and downgrades take effect at the end of your current billing cycle. We'll never charge you for unused time.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false" type="button">
+              <span>How does AI task assignment work?</span>
+              <svg class="faq-item__icon" width="20" height="20" stroke-width="2" aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Our AI analyzes each team member's skill set, current workload, past performance on similar tasks, and availability to suggest optimal task assignments. It learns continuously from your team's patterns and becomes more accurate over time. You always have the final say on all assignments.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false" type="button">
+              <span>Is my data secure with Nexus?</span>
+              <svg class="faq-item__icon" width="20" height="20" stroke-width="2" aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Absolutely. We're SOC 2 Type II certified, GDPR compliant, and use AES-256 encryption for data at rest and TLS 1.3 for data in transit. Your data is hosted in geographically redundant data centers with a 99.99% uptime SLA. We never sell or share your data with third parties.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false" type="button">
+              <span>What integrations does Nexus support?</span>
+              <svg class="faq-item__icon" width="20" height="20" stroke-width="2" aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Nexus integrates with 200+ tools including Slack, Google Workspace, Microsoft 365, Salesforce, HubSpot, Jira, GitHub, Stripe, and Zapier. Our RESTful API and webhooks allow you to build custom integrations for any tool in your stack.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false" type="button">
+              <span>Do you offer discounts for nonprofits or startups?</span>
+              <svg class="faq-item__icon" width="20" height="20" stroke-width="2" aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Yes! We offer 50% off for verified nonprofits and early-stage startups (under 2 years old with under $1M in funding). Contact our sales team with proof of eligibility to get your discounted plan. We believe in supporting organizations doing meaningful work.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact__layout">
+          <div class="contact__info reveal-up">
+            <span class="section-badge">Get Started</span>
+            <h2 class="section-title contact__title" id="contact-heading">Ready to transform your workflow?</h2>
+            <p class="section-subtitle">Start your free 14-day trial today. No credit card required. Set up in under 30 minutes.</p>
+            <div class="contact__details">
+              <div class="contact__detail">
+                <div class="contact__detail-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <span>hello@nexus.app</span>
+              </div>
+              <div class="contact__detail">
+                <div class="contact__detail-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.97 6.97l1.14-1.14a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <span>+1 (555) 000-0000</span>
+              </div>
+              <div class="contact__detail">
+                <div class="contact__detail-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <span>San Francisco, CA</span>
+              </div>
+            </div>
+            <div class="contact__guarantee">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>SOC 2 Certified &nbsp;·&nbsp; GDPR Compliant &nbsp;·&nbsp; 99.99% Uptime</span>
+            </div>
+          </div>
+
+          <form class="contact__form reveal-up" id="contactForm" novalidate aria-label="Contact and trial request form">
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="name">Full Name <span class="form__required" aria-hidden="true">*</span></label>
+                <input class="form__input" type="text" id="name" name="name" placeholder="John Smith" autocomplete="name" required aria-required="true" aria-describedby="name-error">
+                <span class="form__error" id="name-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">Work Email <span class="form__required" aria-hidden="true">*</span></label>
+                <input class="form__input" type="email" id="email" name="email" placeholder="john@company.com" autocomplete="email" required aria-required="true" aria-describedby="email-error">
+                <span class="form__error" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="company">Company Name</label>
+                <input class="form__input" type="text" id="company" name="company" placeholder="Acme Inc." autocomplete="organization">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="team-size">Team Size <span class="form__required" aria-hidden="true">*</span></label>
+                <select class="form__input form__select" id="team-size" name="team-size" required aria-required="true" aria-describedby="team-size-error">
+                  <option value="">Select team size</option>
+                  <option value="1-5">1–5 members</option>
+                  <option value="6-25">6–25 members</option>
+                  <option value="26-100">26–100 members</option>
+                  <option value="100+">100+ members</option>
+                </select>
+                <span class="form__error" id="team-size-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="message">How can we help? <span class="form__required" aria-hidden="true">*</span></label>
+              <textarea class="form__input form__textarea" id="message" name="message" placeholder="Tell us about your team and goals..." rows="4" required aria-required="true" aria-describedby="message-error"></textarea>
+              <span class="form__error" id="message-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form__group form__group--checkbox">
+              <label class="form__checkbox-label" for="consent">
+                <input type="checkbox" id="consent" name="consent" required aria-required="true" aria-describedby="consent-error">
+                <span class="form__checkbox-custom" aria-hidden="true"></span>
+                <span>I agree to the <a href="#" class="form__link">Privacy Policy</a> and <a href="#" class="form__link">Terms of Service</a></span>
+              </label>
+              <span class="form__error" id="consent-error" role="alert" aria-live="polite"></span>
+            </div>
+            <button class="btn btn--primary btn--full btn--lg" type="submit" id="submitBtn">
+              <span class="btn__text">Start Free Trial</span>
+              <span class="btn__spinner" aria-hidden="true"></span>
+            </button>
+            <div class="form__success" id="formSuccess" role="alert" aria-live="assertive" aria-atomic="true"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="logo-link" aria-label="Nexus — Go to homepage">
+            <svg class="logo-icon" width="30" height="30" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 4L44 16V32L24 44L4 32V16L24 4Z" fill="url(#footerGrad)"/>
+              <defs>
+                <linearGradient id="footerGrad" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#6366f1"/>
+                  <stop offset="100%" stop-color="#8b5cf6"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="logo-name">Nexus</span>
+          </a>
+          <p class="footer__brand-desc">The AI-powered platform for modern teams. Automate, collaborate, and grow faster than ever.</p>
+          <nav class="footer__social" aria-label="Social media">
+            <a href="#" class="footer__social-link" aria-label="Follow Nexus on Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Follow Nexus on LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="View Nexus on GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links" role="list">
+            <li><a href="#features" class="footer__link">Features</a></li>
+            <li><a href="#pricing" class="footer__link">Pricing</a></li>
+            <li><a href="#" class="footer__link">Changelog</a></li>
+            <li><a href="#" class="footer__link">Roadmap</a></li>
+            <li><a href="#" class="footer__link">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Company</h4>
+          <ul class="footer__links" role="list">
+            <li><a href="#" class="footer__link">About</a></li>
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li><a href="#" class="footer__link">Careers</a></li>
+            <li><a href="#" class="footer__link">Press</a></li>
+            <li><a href="#contact" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Resources</h4>
+          <ul class="footer__links" role="list">
+            <li><a href="#" class="footer__link">Documentation</a></li>
+            <li><a href="#" class="footer__link">API Reference</a></li>
+            <li><a href="#faq" class="footer__link">FAQ</a></li>
+            <li><a href="#" class="footer__link">Community</a></li>
+            <li><a href="#" class="footer__link">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links" role="list">
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Terms of Service</a></li>
+            <li><a href="#" class="footer__link">Cookie Policy</a></li>
+            <li><a href="#" class="footer__link">GDPR</a></li>
+            <li><a href="#" class="footer__link">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="currentYear"></span> Nexus Inc. All rights reserved.</p>
+        <p class="footer__bottom-tagline">Made with precision &amp; care for modern teams.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
